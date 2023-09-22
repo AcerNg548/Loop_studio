@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor soluton](https://www.frontendmentor.io/solutions/loop-studio-with-nextjs-and-tailwind-css-framermotion-zJWJ5Dflae)
+- Solution URL: [FrontEnd mentor solution](https://www.frontendmentor.io/solutions/loop-studio-with-nextjs-and-tailwind-css-framermotion-zJWJ5Dflae)
 - Live Site URL: [Loop studios](https://loop-studio-qxln85pad-acerng548.vercel.app)
 
 ## My process
