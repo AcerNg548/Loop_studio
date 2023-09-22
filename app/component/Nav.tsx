@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 
 interface CustomLinkProps {
   href: string;
@@ -16,6 +16,8 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   line,
 }) => {
   const router = useRouter();
+  const pathName = usePathname();
+  const params = useParams();
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
@@ -23,7 +25,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
         className={`h-[1px] inline-block bg-white   absolute left-0 -bottom-0.5
          ${line}
         group-hover:w-full transition-[width] ease duration-300 ${
-          router.asPath === href ? "w-full" : "w-0"
+          { pathName } ? "w-full" : "w-0"
         }`}
       >
         &nbsp;

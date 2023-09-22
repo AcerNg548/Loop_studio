@@ -7,6 +7,7 @@ import pintrest from "@/public/images/icon-pinterest.svg";
 import instagram from "@/public/images/icon-instagram.svg";
 import Nav from "./Nav";
 import { useRouter } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 interface LogoProps {
   logoLink: string | StaticImageData;
@@ -16,7 +17,9 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ logoLink, className, line, href }) => {
-  const router = useRouter;
+  const router = useRouter();
+  const pathName = usePathname();
+  const params = useParams();
   return (
     <div className="group relative">
       <Image
@@ -28,7 +31,7 @@ const Logo: React.FC<LogoProps> = ({ logoLink, className, line, href }) => {
         className={`h-[1px] inline-block bg-VeryDarkGray  absolute left-0 -bottom-1.5
          ${line}
         group-hover:w-full transition-[width] ease duration-300 ${
-          router.asPath === href ? "w-0" : "w-full"
+          { pathName } ? "w-0" : "w-full"
         }`}
       >
         &nbsp;
