@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FrontEnd Mentor soluton](https://your-solution-url.com)
-- Live Site URL: [Loop studios](https://news-homepage-lt65-jb8x5znso-acerng548.vercel.app/)
+- Live Site URL: [Loop studios](https://loop-studio-qxln85pad-acerng548.vercel.app)
 
 ## My process
 
