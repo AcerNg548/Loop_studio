@@ -25,7 +25,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
         className={`h-[1px] inline-block bg-white   absolute left-0 -bottom-0.5
          ${line}
         group-hover:w-full transition-[width] ease duration-300 ${
-          { pathName } ? "w-full" : "w-0"
+          { pathName } ? "w-0" : "w-full"
         }`}
       >
         &nbsp;
